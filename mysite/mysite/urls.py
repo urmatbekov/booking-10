@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from doctor.views import doctor
+from client.views import client
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('doctor/',doctor)
+    path('doctor/',doctor),
+    path('client/',client)
 ]
