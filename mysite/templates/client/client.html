@@ -10,6 +10,13 @@
 
 <body>
     <h1>It is page Client</h1>
+
+    <ul>
+    {% for client in clients %}
+        <li> {{ client.name }} </li>
+    {% endfor %}
+    </ul>
+
 </body>
 
 </html>
