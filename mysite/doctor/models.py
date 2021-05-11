@@ -6,6 +6,7 @@ class Doctor(models.Model):
     name = models.CharField("Имя",max_length=120)
     surname = models.CharField("Фамилия",max_length=120)
     age = models.IntegerField("Возраст")
+    photo = models.ImageField("Фото",upload_to="doctor/",null=True)
     
 
     def __str__(self):
