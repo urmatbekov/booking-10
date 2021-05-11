@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from doctor.views import doctor
 from client.views import client
+from home.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("",index),
     path('doctor/',doctor),
     path('client/',client)
 ]
