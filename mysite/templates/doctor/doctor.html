@@ -15,9 +15,11 @@
                         {% endif %}
                         
                         <div class="card-body">
-                            <h2 class="card-title">
-                                {{doctor.name}}
-                            </h2>
+                            <a href="/doctor/{{doctor.id}}">
+                                <h2 class="card-title">
+                                    {{doctor.name}}
+                                </h2>
+                            </a>
                         </div>
                     </div>
                 </div>

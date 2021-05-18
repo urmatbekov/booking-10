@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from doctor.views import doctor
+from doctor.views import doctor,doctor_detail
 from client.views import client
 from home.views import index
 from django.conf import settings
@@ -25,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index),
     path('doctor/', doctor),
-    path('client/', client)
+    path('client/', client),
+    path('doctor/<int:id>/',doctor_detail)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

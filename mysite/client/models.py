@@ -5,3 +5,6 @@ class Client(models.Model):
     name = models.CharField(max_length=120)
     surname = models.CharField(max_length=120)
     age = models.IntegerField()
+
+    def __str__(self):
+        return "{} {}".format(self.name,self.surname)
